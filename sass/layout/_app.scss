@@ -1,0 +1,19 @@
+.app-todo {
+  background-color: $color-background;
+  padding: 5rem 8rem;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr 40rem;
+
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+.body {
+  height: 100vh;
+  height: 100dvh;
+
+  display: flex;
+  flex-direction: column;
+}

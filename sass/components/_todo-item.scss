@@ -1,0 +1,51 @@
+.todo-item {
+  display: flex;
+  flex-direction: column;
+  height: 12rem;
+  border: 2px solid $color-outline;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+  transition: all 300ms;
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.06);
+  }
+
+  &__actions {
+    display: flex;
+  }
+
+  &__title-box {
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__details-box {
+    width: 100%;
+  }
+
+  &__action-icon:not(:last-child) {
+    margin-right: 0.5rem;
+
+    border: 1px solid $color-outline;
+  }
+
+  &__action-icon {
+    border: 1px solid $color-outline;
+    border-radius: 50%;
+    padding: 0.4rem;
+    fill: $font-color-dark;
+    width: 2.4rem;
+    height: 2.4rem;
+    cursor: pointer;
+  }
+}
+
+.todo-item:not(:last-of-type) {
+  margin-bottom: 1rem;
+}

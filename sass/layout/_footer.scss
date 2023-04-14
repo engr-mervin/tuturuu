@@ -1,0 +1,15 @@
+.footer {
+  padding: 0rem 6rem;
+
+  height: 5rem;
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  // background-color: $color-primary;
+}

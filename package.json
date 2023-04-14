@@ -1,0 +1,17 @@
+{
+  "name": "tuturuu",
+  "version": "1.0.0",
+  "description": "To do app",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "sass --watch sass/main.scss:css/style.css",
+    "live-server": "live-server",
+    "start": "npm-run-all --parallel compile:sass live-server"
+  },
+  "author": "Mervin",
+  "license": "ISC",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "sass": "^1.62.0"
+  }
+}

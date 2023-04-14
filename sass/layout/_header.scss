@@ -1,0 +1,32 @@
+.section-header {
+  display: flex;
+  padding: 0rem 6rem;
+  align-items: center;
+  justify-content: space-between;
+
+  background-image: linear-gradient(
+    to bottom,
+    $color-primary-light,
+    $color-primary-dark
+  );
+
+  // background-color: $color-primary;
+}
+
+.logo-box {
+  background-color: $color-white;
+  padding: 0.8rem;
+  border-radius: 50%;
+
+  perspective: 150rem;
+  transition: all 1000ms ease-in-out;
+  &:hover {
+    transform: rotateY(1800deg);
+  }
+}
+
+.logo {
+  height: 2.5rem;
+  display: block;
+  transition: all 1000ms ease-in-out;
+}
