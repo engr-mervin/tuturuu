@@ -44,7 +44,7 @@ body {
   transition: all 300ms;
 }
 .todo-item:hover {
-  transform: translateY(-4px);
+  transform: scale(1) translateY(-4px);
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.06);
 }
 .todo-item__actions {
@@ -167,6 +167,13 @@ body {
   padding: 1rem;
   border: 2px solid #aae7ea;
   box-shadow: 1rem 2rem 4rem rgba(0, 0, 0, 0.15);
+}
+.container:hover > .todo-item {
+  transform: scale(0.98);
+}
+.container .todo-item:hover {
+  transform: scale(1) translateY(-4px);
+  box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.06);
 }
 .container::-webkit-scrollbar {
   width: 7px;
