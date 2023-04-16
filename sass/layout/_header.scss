@@ -1,5 +1,7 @@
 .section-header {
   display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
   padding: 0rem 8rem;
   align-items: center;
 

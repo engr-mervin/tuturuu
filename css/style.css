@@ -89,15 +89,18 @@ body {
   display: flex;
   flex-direction: column;
   height: 14rem;
-  border: 2px solid #aae7ea;
+  border: 1px solid #aae7ea;
   border-radius: 0.6rem;
   overflow: hidden;
+  cursor: pointer;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
   transition: all 300ms;
 }
 .todo-item:hover {
   transform: scale(1) translateY(-4px);
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.06);
+  outline: 3px solid #114e51;
+  outline-offset: 2px;
 }
 .todo-item:not(:last-of-type) {
   margin-bottom: 1.5rem;
@@ -117,8 +120,8 @@ body {
   padding: 1.4rem;
   padding-bottom: 0.8rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1.8rem 1.8rem;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 4rem;
   align-content: center;
   flex: 1;
 }
@@ -132,7 +135,13 @@ body {
   -webkit-box-orient: vertical;
   font-weight: 400;
   grid-column: 1/-1;
-  border-bottom: 1px solid #aae7ea;
+}
+.todo-item__param-box {
+  padding-top: 0.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.8rem;
+  border-top: 1px solid #aae7ea;
 }
 .todo-item__details-param {
   font-size: 1rem;
@@ -188,18 +197,21 @@ body {
   grid-template-columns: 40rem 40rem 1fr;
   column-gap: 8rem;
   flex-grow: 1;
-  flex-shrink: 0;
+  flex-shrink: 1;
 }
 
 .body {
   height: 100vh;
   height: 100dvh;
+  max-height: 100dvh;
   display: flex;
   flex-direction: column;
 }
 
 .section-header {
   display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
   padding: 0rem 8rem;
   align-items: center;
   background-image: linear-gradient(to bottom, #55cfd5, #229ca2);

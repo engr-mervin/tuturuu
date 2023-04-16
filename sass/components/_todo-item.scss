@@ -2,9 +2,11 @@
   display: flex;
   flex-direction: column;
   height: 14rem;
-  border: 2px solid $color-outline;
+  border: 1px solid $color-outline;
   border-radius: 0.6rem;
   overflow: hidden;
+
+  cursor: pointer;
 
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
@@ -12,6 +14,8 @@
   &:hover {
     transform: scale(1) translateY(-4px);
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.06);
+    outline: 3px solid $font-color-dark;
+    outline-offset: 2px;
   }
 
   &:not(:last-of-type) {
@@ -37,9 +41,9 @@
     padding-bottom: 0.8rem;
     display: grid;
 
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
 
-    grid-template-rows: 1fr 1.8rem 1.8rem;
+    grid-template-rows: 1fr 4rem;
 
     align-content: center;
 
@@ -56,8 +60,14 @@
     -webkit-box-orient: vertical;
     font-weight: 400;
     grid-column: 1/-1;
+  }
 
-    border-bottom: 1px solid $color-outline;
+  &__param-box {
+    padding-top: 0.4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1.8rem;
+    border-top: 1px solid $color-outline;
   }
 
   &__details-param {
