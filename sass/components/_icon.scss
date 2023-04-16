@@ -1,2 +1,43 @@
-.icon {
+.todo-item__action-icon {
+  border: 1px solid $color-outline;
+  border-radius: 50%;
+  padding: 0.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  cursor: pointer;
+  background-color: $color-white;
+  transition: all 200ms;
+
+  fill: $color-primary-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:not(:last-child) {
+    margin-right: 0.5rem;
+  }
+}
+
+.todo-item__action-icon-mask {
+  background-color: $font-color-dark;
+  width: 100%;
+  height: 100%;
+}
+
+.icon-check {
+  -webkit-mask: url(../vendors/SVG/check.svg) no-repeat center;
+  -webkit-mask-size: cover;
+}
+
+.icon-edit {
+  -webkit-mask: url(../vendors/SVG/edit.svg) no-repeat center;
+  -webkit-mask-size: cover;
+}
+
+.icon-trash {
+  -webkit-mask: url(../vendors/SVG/trash.svg) no-repeat center;
+  -webkit-mask-size: cover;
 }

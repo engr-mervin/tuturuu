@@ -1,7 +1,7 @@
 .todo-item {
   display: flex;
   flex-direction: column;
-  height: 13rem;
+  height: 14rem;
   border: 2px solid $color-outline;
   border-radius: 0.6rem;
   overflow: hidden;
@@ -12,6 +12,10 @@
   &:hover {
     transform: scale(1) translateY(-4px);
     box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.06);
+  }
+
+  &:not(:last-of-type) {
+    margin-bottom: 1.5rem;
   }
 
   &__actions {
@@ -29,7 +33,7 @@
 
   &__details-box {
     width: 100%;
-    padding: 1rem 1rem;
+    padding: 1.4rem;
     padding-bottom: 0.8rem;
     display: grid;
 
@@ -44,7 +48,7 @@
 
   &__details-text {
     align-self: flex-start;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     overflow: hidden;
     width: 100%;
     display: -webkit-box;
@@ -52,21 +56,23 @@
     -webkit-box-orient: vertical;
     font-weight: 400;
     grid-column: 1/-1;
+
+    border-bottom: 1px solid $color-outline;
   }
 
   &__details-param {
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: block;
     height: 100%;
 
-    font-weight: 500;
+    font-weight: 400;
     text-transform: uppercase;
     display: flex;
     align-items: center;
   }
 
   &__details-value {
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: block;
     height: 100%;
 
@@ -75,24 +81,4 @@
     display: flex;
     align-items: center;
   }
-  &__action-icon:not(:last-child) {
-    margin-right: 0.5rem;
-
-    border: 1px solid $color-outline;
-  }
-
-  &__action-icon {
-    border: 1px solid $color-outline;
-    border-radius: 50%;
-    padding: 0.4rem;
-    fill: $font-color-dark;
-    width: 2.4rem;
-    height: 2.4rem;
-    cursor: pointer;
-    background-color: $color-white;
-  }
-}
-
-.todo-item:not(:last-of-type) {
-  margin-bottom: 1rem;
 }
