@@ -1,4 +1,9 @@
-body {
+.form-flex-2 {
+  display: flex;
+}
+
+body,
+.main-form {
   font-family: "Montserrat", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
@@ -35,6 +40,22 @@ body {
   color: #fff;
   letter-spacing: 1px;
   font-weight: 300;
+}
+
+.form__label {
+  width: 15rem;
+  display: inline-block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.form__input {
+  font-family: inherit;
+}
+
+.form__input::-webkit-input-placeholder {
+  font-family: inherit;
 }
 
 html {
@@ -198,6 +219,10 @@ body {
   border-radius: 100px;
 }
 
+.main-form__container {
+  padding: 2rem;
+}
+
 .app-todo {
   background-color: #eaf9fa;
   padding-left: 12rem;
@@ -291,6 +316,18 @@ body {
   border-top: 2px solid #fff;
   height: 55rem;
   color: #fff;
+}
+.main-form__form-group {
+  margin-top: 2rem;
+}
+.main-form__form-input {
+  font-size: inherit;
+}
+
+.form__input[placeholder=Description] {
+  width: 25rem;
+  height: 15rem;
+  resize: none;
 }
 
 .section-todo-today {

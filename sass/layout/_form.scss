@@ -20,4 +20,18 @@
     height: 55rem;
     color: $color-white;
   }
+
+  &__form-group {
+    margin-top: 2rem;
+  }
+
+  &__form-input {
+    font-size: inherit;
+  }
+}
+
+.form__input[placeholder="Description"] {
+  width: 25rem;
+  height: 15rem;
+  resize: none;
 }

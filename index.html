@@ -363,35 +363,44 @@
           <h2 class="heading-form">ADD NEW TASK +</h2>
           <div class="main-form__container">
             <div class="main-form__form-group form-flex-2">
-              <label for="title">Title:</label>
-              <input type="text" class="main-form__form-input" id="title" />
-            </div>
-
-            <div class="main-form__form-group">
-              <label for="description">Description:</label>
+              <label class="form__label" for="title">Title:</label>
               <input
                 type="text"
-                class="main-form__form-input"
-                id="description"
+                class="form__input"
+                placeholder="Title"
+                id="title"
               />
             </div>
 
-            <div class="main-form__form-group">
-              <label for="date">Deadline:</label>
-              <input type="date" class="main-form__form-input" id="date" />
-              <input type="time" class="main-form__form-input" id="time" />
+            <div class="main-form__form-group form-flex-2">
+              <label class="form__label" for="description">Description:</label>
+              <textarea
+                name="Description"
+                cols="40"
+                rows="1"
+                class="form__input"
+                placeholder="Description"
+                id="description"
+              ></textarea>
             </div>
-            <div class="main-form__form-group">
-              <label for="priority">Priority</label>
+
+            <div class="main-form__form-group form-flex-2">
+              <label class="form__label" for="date">Deadline:</label>
+              <input type="date" class="form__input" id="date" />
+              <input type="time" class="form__input" id="time" />
+            </div>
+            <div class="main-form__form-group form-flex-2">
+              <label class="form__label" for="priority">Priority:</label>
               <input
                 type="number"
-                class="main-form__form-input"
+                class="form__input"
+                placeholder="Title"
                 id="priority"
               />
             </div>
-            <div class="main-form__form-group">
-              <label for="fixed">Fixed Time</label>
-              <input type="checkbox" class="main-form__form-input" id="fixed" />
+            <div class="main-form__form-group form-flex-2">
+              <label class="form__label" for="fixed">Fixed Time:</label>
+              <input type="checkbox" class="form__input" id="fixed" />
             </div>
           </div>
         </form>
