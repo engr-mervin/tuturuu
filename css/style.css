@@ -29,6 +29,14 @@ body {
   letter-spacing: 2px;
 }
 
+.heading-form {
+  padding-bottom: 1rem;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 1px;
+  font-weight: 300;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -94,12 +102,12 @@ body {
   overflow: hidden;
   cursor: pointer;
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  transition: all 300ms;
+  transition: all 200ms;
 }
 .todo-item:hover {
   transform: scale(1) translateY(-4px);
   box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.06);
-  outline: 3px solid #114e51;
+  outline: 2px solid #114e51;
   outline-offset: 2px;
 }
 .todo-item:not(:last-of-type) {
@@ -139,7 +147,7 @@ body {
 .todo-item__param-box {
   padding-top: 0.4rem;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 20fr 30fr 20fr 30fr;
   grid-template-rows: 1fr 1.8rem;
   border-top: 1px solid #aae7ea;
 }
@@ -192,7 +200,7 @@ body {
 
 .app-todo {
   background-color: #eaf9fa;
-  padding: 5rem 8rem;
+  padding-left: 12rem;
   display: grid;
   grid-template-columns: 40rem 40rem 1fr;
   column-gap: 8rem;
@@ -214,6 +222,7 @@ body {
   flex-shrink: 0;
   padding: 0rem 8rem;
   align-items: center;
+  border-bottom: 2px solid #aae7ea;
   background-image: linear-gradient(to bottom, #55cfd5, #229ca2);
 }
 
@@ -264,9 +273,32 @@ body {
   color: #114e51;
 }
 
+.section-form {
+  border-left: 2px solid #aae7ea;
+  margin-left: 4rem;
+}
+
+.main-form {
+  margin-top: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+  padding: 1rem;
+  background-color: #229ca2;
+  border: 2px solid #114e51;
+  border-radius: 0.6rem;
+}
+.main-form__container {
+  border-top: 2px solid #fff;
+  height: 55rem;
+  color: #fff;
+}
+
 .section-todo-today {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
+  padding: 1rem;
+  border: 2px solid transparent;
 }
 
 .today__item-actions {
@@ -280,10 +312,14 @@ body {
 .section-todo-future {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
+  padding: 1rem;
+  border: 2px solid transparent;
 }
 
 .footer {
   padding: 0rem 6rem;
+  border-top: 2px solid #aae7ea;
   height: 5rem;
   background-image: linear-gradient(to bottom, #55cfd5, #229ca2);
   flex-grow: 0;

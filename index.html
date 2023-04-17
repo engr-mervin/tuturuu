@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE-edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Tuturuu</title>
+    <title>Tuturuu: To Do App by Mervin</title>
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -58,7 +58,7 @@
       </nav>
     </header>
     <main class="app-todo">
-      <section class="section-todo-today">
+      <section class="section section-todo-today">
         <h2 class="heading-secondary">Tasks for today:</h2>
         <div class="today container">
           <div class="todo-item">
@@ -304,7 +304,7 @@
         </div>
       </section>
 
-      <section class="section-todo-future">
+      <section class="section section-todo-future">
         <h2 class="heading-secondary">Look ahead:</h2>
         <div class="future container">
           <div class="todo-item">
@@ -358,7 +358,44 @@
         </div>
       </section>
 
-      <form action="" class="main-form"></form>
+      <section class="section section-form">
+        <form action="" class="main-form">
+          <h2 class="heading-form">ADD NEW TASK +</h2>
+          <div class="main-form__container">
+            <div class="main-form__form-group">
+              <label for="title">Title:</label>
+              <input type="text" class="main-form__form-input" id="title" />
+            </div>
+
+            <div class="main-form__form-group">
+              <label for="description">Description:</label>
+              <input
+                type="text"
+                class="main-form__form-input"
+                id="description"
+              />
+            </div>
+
+            <div class="main-form__form-group">
+              <label for="date">Deadline:</label>
+              <input type="date" class="main-form__form-input" id="date" />
+              <input type="time" class="main-form__form-input" id="time" />
+            </div>
+            <div class="main-form__form-group">
+              <label for="priority">Priority</label>
+              <input
+                type="number"
+                class="main-form__form-input"
+                id="priority"
+              />
+            </div>
+            <div class="main-form__form-group">
+              <label for="fixed">Fixed Time</label>
+              <input type="checkbox" class="main-form__form-input" id="fixed" />
+            </div>
+          </div>
+        </form>
+      </section>
     </main>
 
     <footer class="footer"></footer>

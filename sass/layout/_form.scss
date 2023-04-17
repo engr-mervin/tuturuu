@@ -1,0 +1,23 @@
+.section-form {
+  border-left: 2px solid $color-outline;
+  margin-left: 4rem;
+}
+
+.main-form {
+  margin-top: 5rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+
+  padding: 1rem;
+  background-color: $color-primary-dark;
+
+  border: 2px solid $font-color-dark;
+
+  border-radius: 0.6rem;
+
+  &__container {
+    border-top: 2px solid $color-white;
+    height: 55rem;
+    color: $color-white;
+  }
+}
